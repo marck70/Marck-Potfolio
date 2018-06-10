@@ -495,18 +495,19 @@ animation-name: throne;
         background-image:url(img/pyramide_media.png);
     }
 
+    .container_about{
+        background-image: url(img/Marck_infinity_media.png);
+    }
+
 
     .box_about{
-        width: 340px;
-        height: 100%
+        width: 350px;
+        height: 99%;
     }
 
     .box_about p{
-    font-size: 14px;
+    font-size: 13px;
 }
-    .container_about{
-        left:
-    }
     .throne{
         height: 0;
     }
