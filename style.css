@@ -1,0 +1,606 @@
+
+
+h1{
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    font-size: 40px
+
+}
+
+p{
+    color: white;
+    font-size: 20px;
+   font-family: 'Exo 2', sans-serif;
+}
+
+
+h3{
+    color:white;
+   font-family: 'Krona One', sans-serif;
+}
+
+
+.menubutton{
+    top: 2vw;
+    width: 4em;
+    height: 4em;
+    border: 3px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+
+    z-index: 10;
+}
+
+.bar{
+    width: 3.5em;
+    height: 0.9em;
+    background-color: white;
+}
+
+.kryds{
+    transition: transform(1s);
+}
+
+.kryds .bar1{
+    transform: rotate(45deg)
+        translate(14px, 16px);
+
+}
+
+.kryds .bar2{
+    visibility: hidden;
+
+}
+
+
+.kryds .bar3{
+
+    transform: rotate(-45deg)
+        translate(14px, -16px);
+
+}
+
+
+
+nav {
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.65);
+    padding-top: 150px;
+    margin-top: 2vw;
+    width: 152px;
+    height: 600px;
+    transform: translateY(0);
+    transform-origin: top;
+
+    transition: transform 1s;
+
+    z-index: 5;
+}
+.hidden{
+    transform: translateY(-110%);
+
+
+
+}
+
+.menu a{
+    padding: 10px 0px 30px 5px;
+
+    text-decoration: none;
+    font-size: 30px;
+    color: gray;
+    display: block;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+/*Forside*/
+
+
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-image: url(img/pyramiden2.png);
+   height: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container2{
+    background-color: black;
+    height: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+#baggrund_nedre{
+    background-image: url(img/vand.png);
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: none;
+
+
+
+
+}
+
+#stardestroyer{
+    background-image: url(img/Star_Destroyer.png);
+    background-size: 100% 100%;
+    height: 1.5vw;
+    width: 2.28vw;
+    position: absolute;
+    top: 5vw;
+    left: 48vw;
+
+    animation-name: stardestroyer;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes stardestroyer{
+    from{
+        top: 5vw;
+        left: 48vw;
+        transform: scale(1);
+    }
+    to{
+        top: 20vw;
+        left: 18vw;
+        transform: scale(10);
+    }
+}
+
+
+#stardestroyer2{
+    background-image: url(img/Star_Destroyer2.png);
+    background-size: 100% 100%;
+    height: 1.5vw;
+    width: 2.28vw;
+    position: absolute;
+    top: 5vw;
+    left: 58vw;
+
+    animation-name: stardestroyer2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes stardestroyer2{
+    from{
+        top: 5vw;
+        left: 58vw;
+        transform: scale(1);
+
+    }
+    to{
+        top: 20vw;
+        left: 78vw;
+        transform: scale(10)
+
+    }
+}
+
+/*Portfolio-side*/
+
+.container_main{
+    justify-content: center;
+}
+
+
+#box1{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    height: 750px;
+    width: 1200px;;
+    z-index: 2;
+    top: 2vw;
+    left: 10.5vw;
+    z-index: 1;
+
+
+}
+
+#box1 img{
+    width 300px;
+    height: 300px;
+    border-radius: 30px;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    align-content: center;
+    margin-top: 10px;
+
+}
+
+.right img:hover{
+    opacity: 0.7;
+}
+
+.left img:hover{
+    opacity: 0.7;
+
+}
+
+.tilbage{
+    background-size: 100% 100%;
+    background-image: url(img/tilbageknap.png);
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+
+
+}
+
+/*Stilartssite*/
+
+#box2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    height: 750px;
+    width: 1200px;
+    z-index: 2;
+    top: 2vw;
+    left: 10.5vw;
+    z-index: 1;
+    display: block;
+    overflow: scroll;
+}
+
+#hide{
+    transform: translateY(-110%);
+}
+
+
+
+
+p{
+    color: white;
+    margin: 15px 100px;
+
+
+}
+
+button{
+    height: 50px;
+    width: 300px;
+    margin: 20px 20px;
+    background-color:white;
+    display: block;
+    align-self: center;
+}
+
+button a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#box2 h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#box2 h2{
+    color: white;
+    text-align: center;
+}
+
+#box2 img{
+
+    width: 619.5px;
+    height: 350px;
+    margin: 20px 20px 20px 20px;
+
+
+
+}
+
+#top{
+
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+#bottom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Grundlæggende video*/
+
+#top_video img{
+    width: 620px;
+    height: 155px;
+
+}
+
+#top_video{
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottom_video img{
+    width: 620px;
+    height: 244px;
+}
+
+#bottom_video{
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Animation*/
+
+#top_animation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottom_animation img{
+    width: 620px;
+    height: 768px;
+}
+
+#bottom_animation{
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*UX*/
+
+#top_ux{
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top_ux img{
+    width: 620px;
+    height: 269px;
+}
+
+/*About*/
+
+
+.container_about{
+    background-image: url(img/Marck_infinity.png);
+    height: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.box_about{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    height: 750px;
+    width: 700px;
+    z-index: 2;
+    top: 2vw;
+    left: 10.5vw;
+    z-index: 1;
+
+}
+
+.throne{
+    background-image: url(img/throne.png);
+    background-size: 100% 100%;
+    height: 11.5vw;
+    width: 7vw;
+    top: 3vw;
+    left: 87vw;
+    position: absolute;
+
+animation-name: throne;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes throne{
+    from{
+        top: 3vw;
+        left: 87vw;
+
+    }
+    to{
+        top: 4.5vw;
+        left: 87vw;
+
+    }
+}
+
+.box_about h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+
+}
+
+.box_about p{
+    font-size: 22px;
+
+}
+
+/*Media queries*/
+
+
+@media screen and (max-width: 700px){
+    .container{
+        background-image:url(img/pyramide_media.png);
+    }
+
+
+    .box_about{
+        width: 340px;
+        height: 100%
+    }
+
+    .box_about p{
+    font-size: 14px;
+}
+    .container_about{
+        left:
+    }
+    .throne{
+        height: 0;
+    }
+
+/* about*/
+    .menubutton{
+        width: 9vw;
+        height: 9vw;
+
+    }
+    .bar{
+        width: 2em;
+        height: 0.5em
+    }
+
+/*Forside*/
+
+    #stardestroyer{
+        height: 0;
+    }
+
+    #stardestroyer2{
+        height: 0;
+
+    }
+
+    #logo{
+       height: 31px;
+        width: 250px;
+        left: 20%;
+
+    }
+
+/*  portfolio  */
+
+    #box1{
+        width: 350px;
+        height: 99%;
+        flex-direction: column;
+        overflow: scroll;
+        display: block;
+
+    }
+
+/*    Undersider*/
+    #box2{
+        width: 350px;
+    }
+    #box2 p{
+        margin: 20px;
+        font-size:
+    }
+
+    #box2 img{
+        width: 350px;
+        height: 196px;
+
+    }
+
+/*    UX*/
+
+    #top_ux h1{
+        font-size: 25px;
+        margin-top: 50px
+    }
+
+    #top_ux h3{
+        font-size: 25px;
+    }
+
+/*    Animation*/
+    #top_animation h1{
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+/*    Video*/
+
+    #top_video h1{
+        font-size: 25px;
+        margin-top: 50px
+    }
+
+     .kryds .bar1{
+    transform: rotate(45deg)
+        translate(9px, 9px);
+}
+    .kryds .bar3{
+
+    transform: rotate(-45deg)
+        translate(9px, -9px);
+    }
+
+
+}
+
+
