@@ -442,6 +442,7 @@ button a{
     top: 2vw;
     left: 10.5vw;
     z-index: 1;
+    overflow: scroll;
 
 }
 
@@ -505,21 +506,27 @@ animation-name: throne;
 
 
     .box_about{
+        display: flex;
+        flex-direction: column;
         width: 350px;
         height: 99%;
     }
 
     .box_about h1{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .box_about h3{
-        font-size: 17px;
+        font-size: 20px;
         text-align: center;
     }
 
     .box_about p{
-    font-size: 13px;
+    font-size: 12px;
+    margin: 10px;
+
+
+
 }
     .throne{
         height: 0;
@@ -568,10 +575,11 @@ animation-name: throne;
 /*    Undersider*/
     #box2{
         width: 350px;
+        height: 99%
     }
     #box2 p{
         margin: 20px;
-        font-size:
+
     }
 
     #box2 img{
