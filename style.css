@@ -482,6 +482,10 @@ animation-name: throne;
 
 }
 
+.box_about h3{
+    text-align: center;
+}
+
 .box_about p{
     font-size: 22px;
 
@@ -503,6 +507,15 @@ animation-name: throne;
     .box_about{
         width: 350px;
         height: 99%;
+    }
+
+    .box_about h1{
+        font-size: 25px;
+    }
+
+    .box_about h3{
+        font-size: 17px;
+        text-align: center;
     }
 
     .box_about p{
